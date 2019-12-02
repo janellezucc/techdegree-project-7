@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+  }
+
+  header {
+    grid-area: header;
+    background-color: #9b72b5;
+    display: flex; 
+    justify-content: space-between;
+  }
+
+  h1 {
+      margin: 20px 20px;
+  }
+
+  .grid {
+      display: grid; 
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "header"
+      "nav"
+      "main";
+  }
+
+  .bell-grid {
+      width: 1.5%;
+      margin-top: 20px;
+      margin-right: 50px;
+
+  }
