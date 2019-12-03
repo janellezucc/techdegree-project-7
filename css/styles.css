@@ -101,16 +101,19 @@ body { min-height: 100%; }
     height: 30px;
     line-height: 30px;
     padding: 25px 25px;
+    display: inline-block;
 }
 
 .main .search-background {
     background-color: rgba(216, 214, 214, 0.651);
     height: 60px;
-
+    display: inline-block;
+    width: 80%;
 }
 
 .main .main-header-search {
-
+    display: inline-block;
+    border-radius: 10%;
 }
 
 
