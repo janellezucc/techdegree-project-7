@@ -26,7 +26,7 @@ body { min-height: 100%; }
 .header .header-logo h1 {
     color: #FFF;
     font-family: 'Gupter', serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     height: 40px;
     line-height: 40px;
@@ -79,13 +79,14 @@ body { min-height: 100%; }
     grid-area: nav; 
     min-height: 100vh;
     justify-content: center;
+    position: sticky;
 }
 
 .nav img {
     margin: 0 25px;
     padding-top: 15px;
     padding-bottom: 10px;
-    width: 40px;
+    width: 35px;
 }
 
 .main { grid-area: main; }
