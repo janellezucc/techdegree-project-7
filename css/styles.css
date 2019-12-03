@@ -84,12 +84,34 @@ body { min-height: 100%; }
 
 .nav img {
     margin: 0 25px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 35px;
 }
 
-.main { grid-area: main; }
+.main { 
+    grid-area: main; 
+}
+
+.main h2 {
+    color: rgb(119, 118, 118);
+    font-family: 'Gupter', serif;
+    font-size: 20px;
+    font-weight: 400;
+    height: 30px;
+    line-height: 30px;
+    padding: 25px 25px;
+}
+
+.main .search-background {
+    background-color: rgba(216, 214, 214, 0.651);
+    height: 60px;
+
+}
+
+.main .main-header-search {
+
+}
 
 
 
