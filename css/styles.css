@@ -91,6 +91,8 @@ body { min-height: 100%; }
 
 .main { 
     grid-area: main; 
+    justify-content: space-between;
+    display: flex;
 }
 
 .main h2 {
@@ -101,20 +103,18 @@ body { min-height: 100%; }
     height: 30px;
     line-height: 30px;
     padding: 25px 25px;
-    display: inline-block;
 }
 
-.main .search-background {
+.main .main-search {
     background-color: rgba(216, 214, 214, 0.651);
     height: 60px;
-    display: inline-block;
-    width: 80%;
+    width: 100%;
+    align-items: center;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.main .main-header-search {
-    display: inline-block;
-    border-radius: 10%;
-}
 
 
 
