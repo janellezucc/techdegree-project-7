@@ -1,31 +1,101 @@
 * {
     box-sizing: border-box;
-  }
+}
 
-  header {
+html { height: 100%; }
+body { min-height: 100%; }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: "header header" "nav main";
+}
+
+.header {
+    align-items: center;
+    background-color: #908e9e;
+    display: flex;
     grid-area: header;
-    background-color: #9b72b5;
-    display: flex; 
     justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header .header-logo h1 {
+    color: #FFF;
+    font-family: 'Gupter', serif;
+    font-size: 20px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+}
+
+.header .header-logo h1 span {
+    font-weight: 700;
+}
+
+.header .header-nav {
+    align-items: center;
+    display: flex;
+}
+
+.header .header-nav .notifications svg {
+    display: block;
+    height: 24px;
+    width: 24px;
+}
+
+.header .header-nav .divider {
+    background-color: rgba(0,0,0,0.2);
+    display: block;
+    height: 50px;
+    margin: 0 20px;
+    width: 1px;
+}
+
+.header .header-nav .profile img{
+    display: block;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+}
+
+.header .header-nav .name {
+    padding-left: 10px;
+    color: #FFF;
+    font-family: 'Gupter', serif;
+}
+
+.header .icon-fill {
+    fill:#FFFFFF;
+}
+
+.nav { grid-area: nav; }
+
+.main { grid-area: main; }
+
+
+
+
+
+
+
+
+  /* Media Queries */
+  @media (min-width: 320px) {
+
   }
 
-  h1 {
-      margin: 20px 20px;
+
+
+  @media (min-width: 768px) {
+
   }
 
-  .grid {
-      display: grid; 
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas: 
-      "header"
-      "nav"
-      "main";
-  }
 
-  .bell-grid {
-      width: 1.5%;
-      margin-top: 20px;
-      margin-right: 50px;
+
+
+  @media (min-width: 1024px) {
 
   }
