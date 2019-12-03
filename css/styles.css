@@ -9,7 +9,9 @@ body { min-height: 100%; }
     display: grid;
     grid-template-columns: 90px 1fr;
     grid-template-rows: 70px 1fr;
-    grid-template-areas: "header header" "nav main";
+    grid-template-areas: 
+    "header header" 
+    "nav main";
 }
 
 .header {
@@ -24,7 +26,7 @@ body { min-height: 100%; }
 .header .header-logo h1 {
     color: #FFF;
     font-family: 'Gupter', serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
     height: 40px;
     line-height: 40px;
@@ -71,7 +73,20 @@ body { min-height: 100%; }
     fill:#FFFFFF;
 }
 
-.nav { grid-area: nav; }
+.nav { 
+    background-color: #b38fc2;
+    display: block;
+    grid-area: nav; 
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.nav img {
+    margin: 0 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 40px;
+}
 
 .main { grid-area: main; }
 
