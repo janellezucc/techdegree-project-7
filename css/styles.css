@@ -106,13 +106,36 @@ body { min-height: 100%; }
 }
 
 .main .main-search {
-    background-color: rgba(214, 210, 210, 0.651);
-    height: 60px;
-    width: 400%;
     align-items: center;
-    padding-right: 20px;
+    background-color: rgba(214, 210, 210, 0.651);
     display: flex;
+    height: 60px;
     justify-content: flex-end;
+    padding-right: 20px;
+    width: 400%;
+}
+
+.alert {
+    display: flex;
+}
+
+.alert-banner {
+    align-items: center;
+    background-color: rgb(142, 90, 161);
+    border-radius: 5px;
+    color: #FFF;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    width: 95%;
+}
+
+.alert-banner-close {
+    cursor: pointer;
 }
 
 
