@@ -106,9 +106,9 @@ body { min-height: 100%; }
 }
 
 .main .main-search {
-    background-color: rgba(216, 214, 214, 0.651);
+    background-color: rgba(214, 210, 210, 0.651);
     height: 60px;
-    width: 100%;
+    width: 400%;
     align-items: center;
     padding-right: 20px;
     display: flex;
