@@ -30,24 +30,40 @@
                     <div class="name">Janelle Zuccarini</div>
                 </div>
             </div>
-            <!--Navigation-->
-            <div class="nav">
-                <img src="web_app_dashboard_v3.1/icons/icon-dashboard.svg" alt="dashboard">
-                <img src="web_app_dashboard_v3.1/icons/icon-members.svg" alt="members">
-                <img src="web_app_dashboard_v3.1/icons/icon-visits.svg" alt="visits">
-                <img src="web_app_dashboard_v3.1/icons/icon-settings.svg" alt="settings">
-            </div>
-            <!--Main-->
-            <div class="main"> 
-                <h2>Dashboard</h2>
-                <div class="main-search">
-                    <input type="search" placeholder="Search" />
-                </div>
-            </div>
-            <!-- alert banner -->
-            <div class="alert" id="alert" >
-        <!-- JS will insert alert here -->
-            </div>
+    <!--Navigation-->
+    <div class="nav">
+        <img src="web_app_dashboard_v3.1/icons/icon-dashboard.svg" alt="dashboard">
+        <img src="web_app_dashboard_v3.1/icons/icon-members.svg" alt="members">
+        <img src="web_app_dashboard_v3.1/icons/icon-visits.svg" alt="visits">
+        <img src="web_app_dashboard_v3.1/icons/icon-settings.svg" alt="settings">
+    </div>
+    <!--Main-->
+    <div class="main"> 
+        <h2>Dashboard</h2>
+        <div class="main-search">
+            <input type="search" placeholder="Search" />
+        </div>
+    </div>
+    <!-- alert banner -->
+    <div class="alert" id="alert" >
+<!-- JS will insert alert here -->
+    </div>
+    <!-- line graph charts -->
+    <section class="traffic">
+        <div class="traffic-header">
+            <h3>Traffic</h3>
+            <ul class="traffic-nav">
+                <li class="traffic-nav-link">Hourly</li>
+                <li class="traffic-nav-link">Daily</li>
+                <li class="traffic-nav-link active">Weekly</li>
+                <li class="traffic-nav-link">Monthly</li>
+            </ul>
+        </div>
+        <div class="widget-container-full">
+        <!-- element line graph will attach to -->
+            <canvas id="traffic-chart"></canvas>
+        </div>
+    </section>
 
 
 
@@ -58,6 +74,7 @@
 
 
     </div>
+    <script src="app.js"></script>
     </body>
 </html>
 
