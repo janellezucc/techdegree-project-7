@@ -15,6 +15,9 @@ alertBanner.addEventListener('click', e => {
     }
 });
 
+//Store the canvas element with the id of “traffic-chart” in a variable named trafficCanvas.
+const trafficCanvas = document.querySelector("#traffic-chart");
+
 let trafficData = {
     labels: [
         "16-22",
