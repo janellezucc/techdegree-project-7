@@ -187,6 +187,12 @@ body { min-height: 100%; }
     flex-direction: column;
 } 
 
+/* Daily Traffic bar graph */
+
+.widget-container-half {
+    width: 90vw;
+}
+
 
 
 

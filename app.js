@@ -1,5 +1,8 @@
+// Alert Banner //
+
 const alertBanner = document.getElementById("alert");
-// create the html for the banner
+const alertBannerClose = document.querySelector(".alert-banner-close");
+
 alertBanner.innerHTML =
 `
 <div class="alert-banner">
@@ -15,7 +18,8 @@ alertBanner.addEventListener('click', e => {
     }
 });
 
-//Store the canvas element with the id of “traffic-chart” in a variable named trafficCanvas.
+// Traffic Chart //
+
 const trafficCanvas = document.querySelector("#traffic-chart");
 
 let trafficData = {
@@ -65,9 +69,10 @@ let trafficChart = new Chart(trafficCanvas, {
 
 
 // Bar Graph //
+
 const dailyCanvas = document.getElementById("daily-chart");
 
-// data for daily traffic bar chart
+
 const dailyData = {
     labels: ["S", "M", "T", "W", "T", "F", "S"],
     datasets: [{
@@ -94,4 +99,4 @@ const dailyData = {
         type: 'bar',
         data: dailyData,
         options: dailyOptions
-        });
+});
