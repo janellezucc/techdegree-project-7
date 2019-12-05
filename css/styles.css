@@ -102,7 +102,7 @@ body { min-height: 100%; }
 .main h2 {
     color: rgb(119, 118, 118);
     font-family: 'Gupter', serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
     height: 30px;
     line-height: 30px;
@@ -113,6 +113,7 @@ body { min-height: 100%; }
     align-items: center;
     background-color: rgba(214, 210, 210, 0.651);
     display: flex;
+    font-family: 'Gupter', serif;
     height: 60px;
     justify-content: flex-end;
     padding-right: 20px;
@@ -120,14 +121,14 @@ body { min-height: 100%; }
 }
 
 .main .main-search input {
+    appearance: none;
+    border: 0;
     border: 1px solid rgb(116,116,116);
     border-radius: 4px;
+    display: block;
     height: 40px;
     line-height: 20px;
     padding: 10px 15px;
-    display: block;
-    border: 0;
-    appearance: none;
     -webkit-appearance: none;
     width: 40%;
 }
@@ -170,10 +171,11 @@ body { min-height: 100%; }
 .traffic-header {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 .traffic h3 {
-
+    font-size: 20px;
 }
 
 .traffic-nav {
