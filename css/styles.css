@@ -182,6 +182,9 @@ body { min-height: 100%; }
     display: flex;
 }
 
+.traffic-nav-link {
+    padding-right: 20px;
+}
 .traffic-chart {
     display: flex;
     flex-direction: column;
@@ -190,7 +193,10 @@ body { min-height: 100%; }
 /* Daily Traffic bar graph */
 
 .daily-chart{
-    display: flex;
+    display: block;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
 }
 
 
