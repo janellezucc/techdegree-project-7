@@ -189,9 +189,10 @@ body { min-height: 100%; }
 
 /* Daily Traffic bar graph */
 
-.widget-container-half {
-    width: 90vw;
+.daily-chart{
+    display: flex;
 }
+
 
 
 
