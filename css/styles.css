@@ -15,6 +15,11 @@ body { min-height: 100%; }
     "nav main";
 }
 
+canvas {
+    width: 100%;
+    height: auto;
+}
+
 .header {
     align-items: center;
     background-color: #908e9e;
@@ -193,6 +198,15 @@ body { min-height: 100%; }
 /* Daily Traffic bar graph */
 
 .daily-chart{
+    display: block;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+}
+
+/* Doughnut Graph */
+
+.mobile-chart {
     display: block;
     width: 50%;
     height: 50%;
