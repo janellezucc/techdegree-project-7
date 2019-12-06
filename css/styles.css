@@ -201,7 +201,13 @@ canvas {
     display: block;
     width: 50%;
     height: 50%;
-    padding: 20px;
+    padding: 20px;  
+    border-right: 1px solid lightgrey;
+}
+
+.daily-chart, .mobile-chart {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;  
 }
 
 /* Doughnut Graph */
