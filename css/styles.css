@@ -87,10 +87,9 @@ canvas {
 }
 
 .nav img {
-    margin: 0 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 35px;
+    padding: 10px;
+    height: 50px;
+    width: 60px;
 }
 
 .main { 
@@ -168,6 +167,7 @@ canvas {
     justify-content: space-between;
     line-height: 30px;
     padding: 15px 25px;
+    border-bottom: 1px solid lightgray;
 }
 
 .traffic-header {
@@ -193,24 +193,83 @@ canvas {
 } */
 
 /* Daily Traffic bar graph */
-.daily {
-    border-bottom: 1px solid lightgray;
-    border-right: 1px solid lightgray;
-    padding-bottom: 15px;
+
+
+.daily, .mobile {
+    align-items: center;
+    color: rgb(119, 118, 118);
+    font-family: 'Gupter', serif;
+    padding-bottom: 30px;
 }
 
 .mobile {
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 15px;
+    border-left: 1px solid lightgray;
+}
+
+.daily-heading, .mobile-heading {
+    color: rgb(119, 118, 118);
+    font-family: 'Gupter', serif;
+    font-size: 20px;
+    font-weight: 400;
+    height: 30px;
+    padding: 25px 25px;
 }
 
 /* Socials Container */
 
-.socials {
-    display: flex;
+/*.socials {
     align-items: center;
+    border-top: 1px solid lightgray;
+    color: rgb(119, 118, 118);
+    display: flex;
+    font-family: 'Gupter', serif;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: space-between;
+    line-height: 30px;
+    padding: 0 25px;
+} */
+
+.social-image-twitter, .social-image-facebook, .social-image-google {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0% auto;
 }
 
+.social-heading {
+    display: flex;
+    color: rgb(119, 118, 118);
+    border-top: 1px solid lightgray;
+    font-family: 'Gupter', serif;
+    font-size: 20px;
+    font-weight: 400;
+    height: 30px;
+    padding: 25px 25px;
+}
+
+.twitter-circle {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(116, 119, 189);
+    height: 50px;
+    width: 50px;
+}
+
+.twitter-box, .facebook-box, .google-box {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 30%;
+    border: 1px solid rgb(116,116,116);
+}
+
+.twitter-svg {
+    display: inline-block;
+    width: 50%;
+}
 
 
 
@@ -234,7 +293,13 @@ canvas {
         }
 
         .nav {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .daily, .mobile {
+            display: inline-block;
         }
 
         .traffic-chart, .social {
