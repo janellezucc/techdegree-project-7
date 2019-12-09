@@ -187,34 +187,28 @@ canvas {
 .traffic-nav-link {
     padding-right: 20px;
 }
-.traffic-chart {
+/* .traffic-chart {
     display: flex;
     flex-direction: column;
-} 
+} */
 
 /* Daily Traffic bar graph */
-
-.daily-chart{
-
-    display: block;
-    margin: 0% auto;
-    padding: 20px;  
-    border-right: 1px solid lightgrey;
-    width: 50%;
+.daily {
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding-bottom: 15px;
 }
 
-.daily-chart, .mobile-chart {
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;  
+.mobile {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
 }
 
-/* Doughnut Graph */
+/* Socials Container */
 
-.mobile-chart {
-    display: block;
-    margin: 0% auto;
-    padding: 20px;
-    width: 50%;
+.socials {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -263,7 +257,7 @@ canvas {
             width: 90vw;
             }
 
-        .widget-container-half {
+        .widget-container-half, .mobile-users-container {
             width: 45vw;
         }
 }
