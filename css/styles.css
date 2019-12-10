@@ -166,6 +166,8 @@ canvas {
 
 .alert-banner-close {
     cursor: pointer;
+    float: right;
+    padding-right: 5px;
 }
 
 .traffic {
