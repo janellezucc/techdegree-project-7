@@ -292,11 +292,16 @@ canvas {
 }
 
 .member-1, .member-2, .member-3, .member-4, .recent-1, .recent-2, .recent-3, .recent-4  {
+    border-bottom: 1px solid rgb(116,116,116);
     display:flex;
     align-items: center;
     justify-content: flex-start;
     margin:  0 15px ;
     padding: 15px;
+}
+
+.member-4, .recent-4 {
+    border-bottom: none;
 }
 
 .date {
