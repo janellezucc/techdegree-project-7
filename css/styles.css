@@ -217,18 +217,11 @@ canvas {
 
 /* Socials Container */
 
-/*.socials {
-    align-items: center;
+.socials {
+    border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
-    color: rgb(119, 118, 118);
     display: flex;
-    font-family: 'Gupter', serif;
-    font-size: 15px;
-    font-weight: 700;
-    justify-content: space-between;
-    line-height: 30px;
-    padding: 0 25px;
-} */
+}
 
 .social-image-twitter, .social-image-facebook, .social-image-google {
     align-items: center;
@@ -237,10 +230,9 @@ canvas {
     margin: 0% auto;
 }
 
-.social-heading {
-    display: flex;
+.social-heading, .members h3, .recent-activity h3 {
     color: rgb(119, 118, 118);
-    border-top: 1px solid lightgray;
+    display: flex;
     font-family: 'Gupter', serif;
     font-size: 20px;
     font-weight: 400;
@@ -248,7 +240,13 @@ canvas {
     padding: 25px 25px;
 }
 
-.twitter-circle {
+.social-name {
+    color: rgb(142, 90, 161);
+    font-family: 'Gupter', serif;
+    font-size: 20px;
+}
+
+.twitter-circle, .facebook-circle, .google-circle {
     display: flex;
     justify-content: center;
     border-radius: 50%;
@@ -259,16 +257,70 @@ canvas {
 
 .twitter-box, .facebook-box, .google-box {
     align-items: center;
+    background-color: rgba(214, 210, 210, 0.651);
+    border: 1px solid rgb(116,116,116);
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    border-radius: 5px;
-    width: 30%;
-    border: 1px solid rgb(116,116,116);
+    margin: 20px;
+    width: 300px;
+    height: 100px;
 }
 
-.twitter-svg {
+.number {
+    display: flex;
+    color: rgb(119, 118, 118);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.twitter-svg, .facebook-svg, .google-svg {
     display: inline-block;
+    padding-top: 15px;
     width: 50%;
+}
+
+/* New Members and Recent Activity */
+
+.members, .recent-activity {
+    border-right: 1px solid rgb(116,116,116);
+    border-bottom: 1px solid rgb(116,116,116);
+    font-family: 'Gupter', serif;
+}
+
+.members-container, .recent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.member-1, .member-2, .member-3, .member-4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.date {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+a {
+    color: rgb(142, 90, 161);
+    font-family: 'Gupter', serif;
+    text-decoration: none;
+}
+
+.recent-1, .recent-2, .recent-3, .recent-4 {
+    display: flex;
+    align-items: center;
+}
+
+.members img, .recent-activity img {
+    align-content: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 
 
@@ -298,7 +350,7 @@ canvas {
             justify-content: flex-start;
         }
 
-        .daily, .mobile {
+        .daily, .mobile, .members, .recent-activity, .message, .settings {
             display: inline-block;
         }
 
