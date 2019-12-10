@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Gupter', serif;
 }
 
 html { height: 100%; }
@@ -66,7 +67,12 @@ canvas {
     border-radius: 50%;
     height: 30px;
     width: 30px;
+}
 
+.circle {
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
 }
 
 .header .header-nav .name {
@@ -79,6 +85,13 @@ canvas {
     fill:#FFFFFF;
 }
 
+.notifications {
+    transition: transform 1s ease-in-out;
+}
+
+.notifications:hover {
+    transform: rotate(360deg);
+}
 .nav { 
     background-color: #b38fc2;
     display: flex;
@@ -103,7 +116,6 @@ canvas {
 
 .main h2 {
     color: rgb(119, 118, 118);
-    font-family: 'Gupter', serif;
     font-size: 25px;
     font-weight: 400;
     height: 30px;
@@ -115,7 +127,6 @@ canvas {
     align-items: center;
     background-color: rgba(214, 210, 210, 0.651);
     display: flex;
-    font-family: 'Gupter', serif;
     height: 60px;
     justify-content: flex-end;
     padding-right: 20px;
@@ -160,7 +171,6 @@ canvas {
 .traffic {
     color: rgb(119, 118, 118);
     display: block;
-    font-family: 'Gupter', serif;
     font-size: 15px;
     font-weight: 700;
     justify-content: space-between;
@@ -193,7 +203,6 @@ canvas {
 .daily, .mobile {
     align-items: center;
     color: rgb(119, 118, 118);
-    font-family: 'Gupter', serif;
     padding-bottom: 30px;
 }
 
@@ -203,7 +212,6 @@ canvas {
 
 .daily-heading, .mobile-heading {
     color: rgb(119, 118, 118);
-    font-family: 'Gupter', serif;
     font-size: 20px;
     font-weight: 400;
     padding: 25px 25px;
@@ -229,7 +237,6 @@ canvas {
 
 .social-heading, .members h3, .recent-activity h3 {
     color: rgb(119, 118, 118);
-    font-family: 'Gupter', serif;
     font-size: 20px;
     font-weight: 400;
     padding: 25px 25px;
@@ -237,7 +244,6 @@ canvas {
 
 .social-name {
     color: rgb(142, 90, 161);
-    font-family: 'Gupter', serif;
     font-size: 20px;
     margin-bottom: auto;
 }
@@ -274,7 +280,6 @@ canvas {
 .members, .recent-activity {
     border-right: 1px solid rgb(116,116,116);
     border-bottom: 1px solid rgb(116,116,116);
-    font-family: 'Gupter', serif;
     color: rgb(119, 118, 118);
 }
 
@@ -304,7 +309,6 @@ p {
 
 a {
     color: rgb(142, 90, 161);
-    font-family: 'Gupter', serif;
     text-decoration: none;
     padding-left: 10px;
 }
@@ -335,9 +339,8 @@ a {
     margin: 20px 30px;
 }
 
-.message h3 {
+.message h3, .settings h3 {
     color: rgb(119, 118, 118);
-    font-family: 'Gupter', serif;
     font-size: 20px;
     font-weight: 400;
     padding: 20px 25px;
@@ -360,12 +363,49 @@ a {
     background-color: rgb(142, 90, 161);
     border-radius: 5px;
     color: #FFF;
-    font-family: 'Gupter', serif;
     font-size: 20px;
     margin-top: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+/* Settings */
+
+.settings-container {
+    color: rgb(119, 118, 118);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px; 
+    padding-bottom: 35px;
+}
+
+.settings-button {
+    display: flex;
+    justify-content: space-between ;
+} 
+
+#cancel, #save {
+    color: white;
+    font-size: 20px;
+    width: 48%;
+}
+
+#cancel {
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(144, 142, 152);
+}
+
+#timezone {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+} 
+ .switch-light {
+     width: 20%;
+ }
 
 
 
