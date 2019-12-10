@@ -199,7 +199,7 @@ canvas {
 }
 
 .mobile {
-    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
 }
 
 .daily-heading, .mobile-heading {
@@ -213,9 +213,10 @@ canvas {
 /* Socials Container */
 
 .social-container {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly;*/
+    padding: 20px 20px;
 }
 
 .socials {
@@ -239,20 +240,21 @@ canvas {
     color: rgb(142, 90, 161);
     font-family: 'Gupter', serif;
     font-size: 20px;
+    margin-bottom: auto;
 }
 
 .twitter-circle, .facebook-circle, .google-circle {
     border-radius: 50%;
     background-color: rgb(116, 119, 189);
     width: 50px;
+    height: 50px;
 } 
 
 .twitter-box, .facebook-box, .google-box {
     background-color: rgba(214, 210, 210, 0.651);
     border: 1px solid rgb(116,116,116);
     border-radius: 5px;
-    margin: 20px;
-    width: 400px;
+    padding: 20px 20px;
 }
 
 .number {
@@ -261,7 +263,7 @@ canvas {
     font-weight: 600;
 }
 
-.twitter-svg, .facebook-svg, .google-svg {
+.twitter-svg, .google-svg {
     padding-top: 15px;
     width: 50%;
 } 
@@ -305,7 +307,6 @@ a {
 .members img, .recent-activity img {
     align-content: center;
     border-radius: 50%;
-    height: 50px;
     width: 50px;
 }
 
@@ -340,6 +341,11 @@ a {
             display: inline-block;
         }
 
+        .mobile {
+            border-top: none;
+            border-left: 1px solid lightgray;
+        }
+
         .traffic-chart, .social {
             grid-column: 1 / span 2;
             }
@@ -366,11 +372,14 @@ a {
 
         .social-container {
             display: block;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
 
-        .socials {
-
+        .twitter-box, .facebook-box, .google-box {
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 30px;
         }
 }
   
