@@ -145,12 +145,12 @@ canvas {
     border-radius: 5px;
     color: #FFF;
     display: flex;
-    height: 40px;
+
     justify-content: space-between;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 40px;
-    padding: 0 20px;
+    padding: 10px 20px;
     width: 95%;
 }
 
@@ -187,10 +187,6 @@ canvas {
 .traffic-nav-link {
     padding-right: 20px;
 }
-/* .traffic-chart {
-    display: flex;
-    flex-direction: column;
-} */
 
 /* Daily Traffic bar graph */
 
@@ -211,36 +207,33 @@ canvas {
     font-family: 'Gupter', serif;
     font-size: 20px;
     font-weight: 400;
-    height: 30px;
     padding: 25px 25px;
 }
 
 /* Socials Container */
 
+.social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .socials {
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
-    display: flex;
 }
 
 .social-image-twitter, .social-image-facebook, .social-image-google {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     margin: 0% auto;
-}
+} 
 
 .social-heading, .members h3, .recent-activity h3 {
     color: rgb(119, 118, 118);
-    display: flex;
     font-family: 'Gupter', serif;
     font-size: 20px;
     font-weight: 400;
-    height: 30px;
     padding: 25px 25px;
 }
-
-
 
 .social-name {
     color: rgb(142, 90, 161);
@@ -249,38 +242,29 @@ canvas {
 }
 
 .twitter-circle, .facebook-circle, .google-circle {
-    display: flex;
-    justify-content: center;
     border-radius: 50%;
     background-color: rgb(116, 119, 189);
-    height: 50px;
     width: 50px;
-}
+} 
 
 .twitter-box, .facebook-box, .google-box {
-    align-items: center;
     background-color: rgba(214, 210, 210, 0.651);
     border: 1px solid rgb(116,116,116);
     border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
     margin: 20px;
-    width: 300px;
-    height: 100px;
+    width: 400px;
 }
 
 .number {
-    display: flex;
     color: rgb(119, 118, 118);
     font-size: 15px;
     font-weight: 600;
 }
 
 .twitter-svg, .facebook-svg, .google-svg {
-    display: inline-block;
     padding-top: 15px;
     width: 50%;
-}
+} 
 
 /* New Members and Recent Activity */
 
@@ -378,6 +362,15 @@ a {
 
         .widget-container-half, .mobile-users-container {
             width: 45vw;
+        }
+
+        .social-container {
+            display: block;
+            justify-content: space-between;
+        }
+
+        .socials {
+
         }
 }
   
