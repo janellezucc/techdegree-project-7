@@ -234,6 +234,9 @@ canvas {
 }
 
 .social-image-twitter, .social-image-facebook, .social-image-google {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     margin: 0% auto;
 } 
 
@@ -246,8 +249,9 @@ canvas {
 
 .social-name {
     color: rgb(142, 90, 161);
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: auto;
+    line-height: 20px;
 }
 
 .twitter-circle, .facebook-circle, .google-circle {
@@ -268,8 +272,9 @@ canvas {
 
 .number {
     color: rgb(119, 118, 118);
-    font-size: 15px;
     font-weight: 600;
+    font-size: 28px;
+    line-height: 30px;
 }
 
 .twitter-svg, .google-svg {
@@ -330,6 +335,10 @@ a {
     align-content: center;
     border-radius: 50%;
     width: 50px;
+}
+
+.member-activity-container {
+    flex-direction: column;
 }
 
 
@@ -405,23 +414,39 @@ a {
 }
 
 #timezone {
+    height: 40px;
+    line-height: 20px;
     margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px 20px;
+    width: 100%;
+}
 
-} 
+.setting-content {
+    display: flex;
+    flex-direction: column;
+}
+
  .switch-light {
-     width: 20%;
+    display: flex;
+    margin-bottom: 10px;
  }
 
+ .switch-light:last-of-type {
+    margin-bottom: 0;
+ }
 
+ .switch-light > strong {
+    flex: 1;
+    line-height: 32px !important;
+ }
 
+ .switch-light > span {
+     width: 100px !important;
+ }
 
-
-
-
-
-
+ .user-settings {
+     flex-direction: column;
+ }
 
   /* Media Queries */
   @media (min-width: 768px) {
@@ -491,23 +516,38 @@ a {
             margin: 0 30px;
         }
 
-        .members-container, .recent-container {
-            display: block;
+        .members, .recent-activity {
+            flex: 1;
+        }
+
+        .member-activity-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .user-settings {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .message, .settings {
+            flex: 1;
+        }
+
+        .settings {
+            border-left: 1px solid rgb(144, 142, 152);
+        }
+
+        .setting-content {
+            display: flex;
+            flex-direction: column;
+            margin: 0 30px;
+            padding-bottom: 30px;
+            height: 100%;
+        }
+
+        .settings-container {
+            flex: 1;
         }
 }
-  
 
-
-
-
-  /*@media (min-width: 1024px) {
-      .grid-container{
-        display: grid;
-        grid-auto-rows: 1fr;
-        grid-template-columns: 90px 1fr;
-        grid-template-rows: 70px 1fr;
-        grid-template-areas: 
-        "header header" 
-        "nav main";
-      }
-    } */
