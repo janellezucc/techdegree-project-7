@@ -133,4 +133,23 @@ let mobileChart = new Chart(mobileCanvas, {
     type: 'doughnut',
     data: mobileData,
     options: mobileOptions
+
+    
  });
+
+ const send = document.getElementById('send');
+
+send-button.addEventListener('click', (e) => { 
+    if (user.value && MessageChannel.value === "") {
+        alert("This message and user field is empty. Please fill");
+    } else if (user.value === "") {
+        alert("Fill message before pressing send");
+    } else if (message.value === "") {
+        alert("Fill uer field before pressing send");
+    } else {
+        alert("Message was sent to $(user.value)");
+    }
+});
+        
+        
+    

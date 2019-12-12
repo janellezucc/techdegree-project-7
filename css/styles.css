@@ -500,10 +500,6 @@ a {
             width: 45vw;
         }
 
-        .socials {
-            display: flex;
-        }
-
         .social-container {
             flex: 1;
             justify-content: space-evenly;
@@ -551,3 +547,10 @@ a {
         }
 }
 
+    @media (min-width: 1024px) {
+        .socials {
+            display: flex;
+        }
+
+
+}
