@@ -1,13 +1,12 @@
 // Alert Banner //
 
 const alertBanner = document.getElementById("alert");
-const alertBannerClose = document.querySelector(".alert-banner-close");
+
 
 alertBanner.innerHTML =
 `
 <div class="alert-banner">
-<p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks
-to complete</p>
+<p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
 <p class="alert-banner-close">x</p>
 </div> `
 
@@ -136,18 +135,19 @@ let mobileChart = new Chart(mobileCanvas, {
 
     
  });
+ const user = document.getElementById('userField');
+ const message = document.getElementById('messageField');
+const send = document.getElementById('send');
 
- const send = document.getElementById('send');
-
-send-button.addEventListener('click', (e) => { 
-    if (user.value && MessageChannel.value === "") {
+send.addEventListener('click', (e) => { 
+    if (user.value && message.value === "") {
         alert("This message and user field is empty. Please fill");
     } else if (user.value === "") {
         alert("Fill message before pressing send");
     } else if (message.value === "") {
         alert("Fill uer field before pressing send");
     } else {
-        alert("Message was sent to $(user.value)");
+        alert("Message was sent");
     }
 });
         
